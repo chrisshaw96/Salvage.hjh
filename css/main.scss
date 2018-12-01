@@ -1,3 +1,8 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -101,3 +106,11 @@ section.container .row {
   min-width: 32px;
   min-height: 33px;
 }
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
